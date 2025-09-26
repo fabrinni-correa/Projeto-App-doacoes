@@ -1,5 +1,5 @@
 
-## Projeto Acadêmico
+## Projeto Acadêmico - Aplicativo para Doações
 Projeto acadêmico da disciplina **Prática Profissional e Inserção Comunitária I** do Curso de Sistemas de Informação - UNOESC Chapecó – 2025. Aplicativo para conectar doadores, pessoas e ONGs em uma rede de doações.
 
 
@@ -25,7 +25,7 @@ Nosso objetivo é desenvolver um aplicativo multiplataforma (web e mobile) que a
 ---
 
 ## 👥 Equipe
-* **Fabrinni Ferreira Corrêa ** 
+* **Fabrinni Ferreira Corrêa** 
 * **Pedro Thomas** 
 * **Vinicius Leban** 
 
