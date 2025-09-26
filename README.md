@@ -17,9 +17,9 @@ Nosso objetivo é desenvolver um aplicativo multiplataforma (web e mobile) que a
 ---
 
 ## 📂 Estrutura do Repositório
-* `relatorio/`: Contém os documentos oficiais de entrega do projeto, incluindo os relatórios parciais.
-* `artefatos/`: Pasta destinada a todos os materiais coletados durante a fase de pesquisa e validação da ideia.
-* `pesquisas/`: Documentação das pesquisas realizadas com a comunidade, incluindo formulários e respostas.
+* Projeto-App-Doacoes/`: Contém os arquivos do Latex.
+* `Projeto-App-Doacoes.zip/`: Arquivo zipado. 
+* `artefatos/`: Pasta destinada a todos aos registros de e-mail, print de conversas do WhatsApp  e outros materiais coletados durante a fase de pesquisa e validação da ideia.
 * `README.md`: Este arquivo, com a descrição detalhada do projeto.
 
 ---
