@@ -1,2 +1,2 @@
 # Projeto-App-doacoes
-Projeto acadêmico da disciplina Prática Profissional e Inserção Comunitária I (UNOESC Chapecó) – 2025. Aplicativo para conectar doadores, pessoas e ONGs em uma rede de doações.
+Projeto acadêmico da disciplina Prática Profissional e Inserção Comunitária I do Curso de Sistemas de Informação - UNOESC Chapecó – 2025. Aplicativo para conectar doadores, pessoas e ONGs em uma rede de doações.
