@@ -8,8 +8,8 @@ Esta pasta contém os materiais coletados durante a primeira fase do projeto, co
 
 Para entender os desafios reais do processo de doação, buscamos contato com diferentes instituições.
 
-* **Central de Doações:** Entramos em contato com a central de doações da cidade, mas informaram que não poderiam nos auxiliar.
-* **Envio de E-mails:** O e-mail de pesquisa foi encaminhado para as seguintes ONGs:
+* **Central de Doações:** Entramos em contato com a central de doações da cidade, mas foi nos informado que não poderiam nos auxiliar.
+* **Envio de E-mails:** Foi elaborado algumas perguntas para pesquisa e foi encaminhado para algumas ONGs:
     * Cruz Vermelha
     * Leo Clube
     * Rotary Clube
