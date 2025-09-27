@@ -17,8 +17,8 @@ Nosso objetivo é desenvolver um aplicativo multiplataforma (web e mobile) que a
 ---
 
 ## 📂 Estrutura do Repositório
-* Projeto-App-Doacoes/`: Contém os arquivos do Latex.
-* `Projeto-App-Doacoes.zip/`: Arquivo zipado. 
+* Projeto-App-Doacoes/`: Contém todos os arquivos-fonte do relatório do projeto em formato LaTeX.
+* `Projeto-App-Doacoes.zip/`: Arquivo compactado com o projeto completo. 
 * `artefatos/`: Pasta destinada a todos aos registros de e-mail, print de conversas do WhatsApp  e outros materiais coletados durante a fase de pesquisa e validação da ideia.
 * `README.md`: Este arquivo, com a descrição detalhada do projeto.
 
