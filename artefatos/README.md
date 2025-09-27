@@ -22,7 +22,7 @@ Para entender os desafios reais do processo de doação, buscamos contato com di
 
 Para validar a ideia com o público geral, criamos e divulgamos um formulário online.
 
-* **Público-alvo:** O link do formulário foi compartilhado com amigos, familiares e colegas de trabalho via WhatsApp, visando entender as dificuldades e hábitos de quem doa.
+* **Público-alvo:** O link do formulário foi compartilhado com amigos, familiares e colegas de trabalho via WhatsApp, visando entender dificuldades e hábitos de quem doa.
 * **Formulário:** O modelo do formulário utilizado está anexado nesta pasta para referência.
 * **Resultados:** As respostas e dados coletadas estão anexado.
 
