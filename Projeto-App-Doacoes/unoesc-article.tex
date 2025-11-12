@@ -92,6 +92,41 @@ Desenvolver um aplicativo multiplataforma que funcione como uma rede social de d
 O público-alvo do aplicativo compreende dois grupos principais. O primeiro são os \textbf{doadores}, que incluem pessoas físicas, empresas e instituições interessadas em contribuir com roupas, alimentos e outros itens essenciais. O segundo grupo são os \textbf{beneficiados}, formado por famílias e indivíduos em situação de vulnerabilidade social na comunidade de Chapecó-SC. 
 Além disso, organizações não governamentais e entidades assistenciais locais também podem se beneficiar da plataforma, utilizando-a como apoio na gestão das doações e na distribuição de recursos. Dessa forma, o aplicativo busca integrar diferentes atores sociais em prol da solidariedade e do fortalecimento comunitário.
 
+\section{TRABALHOS RELACIONADOS}
+
+A análise de trabalhos relacionados posiciona o projeto, destacando seus diferenciais frente a soluções existentes de solidariedade.
+
+\begin{itemize}
+    \item \textbf{Plataformas Logísticas Formais (Ex: Exército da Salvação, Doações.gov.br, Rede Caixa Solidária):} Oferecem canais formais e garantem o destino dos itens, mas dependem de \textbf{logística centralizada e pontos de coleta físicos}. O diferencial do projeto é a \textbf{intermediação direta (peer-to-peer) via aplicativo móvel}, com \textbf{feed social} para maior agilidade e engajamento.
+    \item \textbf{Canais Digitais Informais (Ex: Solidarizando, Grupos de Redes Sociais):} São ágeis na publicação, mas carecem de \textbf{segurança, validação formal da entrega e histórico centralizado}. O projeto se diferencia ao fornecer uma \textbf{rede social estruturada e transparente}, com validação mútua da entrega e registro do impacto (RF04 e RF05).
+    \item \textbf{Sistemas com Incentivos (Ex: Nota Fiscal Paulista):} Demonstram o potencial de vincular ações sociais a benefícios tangíveis (incentivo fiscal/social). O aplicativo utiliza este conceito de forma nativa, com \textbf{gamificação por pontos} (RF07) para futura conversão em benefícios, focando o incentivo na \textbf{base da transação de doação de itens}.
+\end{itemize}
+
+O projeto busca ser a solução que integra a transparência de um sistema formal, a interação de uma rede social e os incentivos de programas governamentais, focando na comunidade de Chapecó-SC.
+
+\section{REQUISITOS FUNCIONAIS (RF)}
+
+Os Requisitos Funcionais (RFs) definem as ações essenciais que o aplicativo deve realizar:
+
+\begin{itemize}
+    \item \textbf{RF01 - Gestão de Perfis:} Cadastro e login seguro de doadores (físicos/jurídicos), beneficiários e ONGs.
+    \item \textbf{RF02 - Publicação e Geolocalização:} Publicação de itens e campanhas em um \textit{feed} interativo, exibidos com base na proximidade (Chapecó-SC).
+    \item \textbf{RF03 - Interação e Comunicação:} Facilitar a comunicação segura entre doadores e beneficiários para combinar a entrega.
+    \item \textbf{RF04 - Validação e Histórico:} Possibilitar a confirmação mútua da entrega e registrar o histórico detalhado das doações.
+    \item \textbf{RF05 - Gamificação e Incentivos:} Implementar o sistema de pontuação (gamificação) por ação validada e gerar a base de dados para futuras integrações de benefícios fiscais/sociais.
+\end{itemize}
+
+\section{REQUISITOS NÃO FUNCIONAIS (RNF)}
+
+Os Requisitos Não Funcionais (RNFs) definem a qualidade e as restrições técnicas do sistema:
+
+\begin{itemize}
+    \item \textbf{RNF01 - Usabilidade e Acessibilidade:} Interface intuitiva, simples e acessível a todos os públicos.
+    \item \textbf{RNF02 - Desempenho e Escalabilidade:} Tempo de resposta rápido e capacidade de suportar um grande volume de usuários e transações.
+    \item \textbf{RNF03 - Segurança e Transparência:} Proteção dos dados pessoais e garantia da confiabilidade dos perfis e das transações.
+    \item \textbf{RNF04 - Compatibilidade:} Solução \textbf{multiplataforma} (Android e iOS).
+\end{itemize}
+
 \postextual%% Elementos pós-textuais
 \newpage
 \printbibliography%% Referências
