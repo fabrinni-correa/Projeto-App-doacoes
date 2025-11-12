@@ -32,5 +32,5 @@ Nosso objetivo é desenvolver um aplicativo multiplataforma (web e mobile) que a
 ---
 
 ## 📅 Status do Projeto
-**Fase Atual:** Entrega Parcial 1 – Finalização da pesquisa, elaboração do relatório inicial e organização dos artefatos.
+**Fase Atual:** Entrega Parcial 2 – Trabalhos relacionados, requisitos funcionais (RF) e requisitos não funcionais (RNF).
 
