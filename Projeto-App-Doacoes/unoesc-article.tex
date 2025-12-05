@@ -45,6 +45,8 @@
 }
 
 \data{}
+%% Inserir imagens
+\usepackage{graphicx}
 
 %% Ferramenta para criação de índices
 \makeindex%
@@ -103,33 +105,179 @@ A análise de trabalhos relacionados posiciona o projeto, destacando seus difere
 \end{itemize}
 
 O projeto busca ser a solução que integra a transparência de um sistema formal, a interação de uma rede social e os incentivos de programas governamentais, focando na comunidade de Chapecó-SC.
+\item % \textbf{riscos}:
+\end{itemize}
+
+
+Um pouco mais sobre as aplicações relacionadas que foram citadas a cima:
+\item % \textbf{riscos}:
+\end{itemize}
+
+{\textbf{Exército da Salvação}}
+
+\begin{itemize}
+    \item É uma das maiores instituições mundiais de doação de roupas, móveis e itens usados.
+    \item Usa caminhões para coletar itens nas casas das pessoas.
+    \item Depende de centros regionais e lojas beneficentes.
+    \item Possui credibilidade, mas a coleta pode ser \textbf{lenta}, e nem sempre disponível em todas as regiões.
+\end{itemize}
+
+{\textbf{Doações.gov.br}}
+
+\begin{itemize}
+    \item Plataforma oficial do governo brasileiro.
+    \item Atua sobretudo em \textbf{doações institucionais}, ligando empresas e entidades.
+    \item Foca em grandes volumes e demandas de órgãos públicos.
+    \item Não tem foco em pessoa comum doando para outra pessoa comum.
+\end{itemize}
+
+{\textbf{Rede Caixa Solidária}}
+
+\begin{itemize}
+    \item Conjunto de pontos de coleta mantidos por instituições parceiras.
+    \item Presente em vários estados.
+    \item Funciona muito bem para doação de roupas e alimentos.
+    \item O processo depende de deslocamento físico, o que reduz acessibilidade para comunidades carentes.
+\end{itemize}
+
+
+{\textbf{Solidarizando}}
+
+\begin{itemize}
+    \item Plataforma digital com foco em postagens de pedidos e doações.
+    \item A interação é simples, mas ainda funciona com base em \textbf{confiança sem verificação}.
+    \item Falta controle de histórico, indicadores, certificação da entrega, etc.
+\end{itemize}
+
+{\textbf{Grupos de redes sociais}}
+
+\begin{itemize}
+    \item Milhares de grupos de Facebook e WhatsApp de doações locais.
+    \item Funcionam como classificados: alguém posta → alguém comenta → entrega é combinada.
+    \item Muito rápidos e com grande alcance.
+\end{itemize}
+ 
+
 
 \section{REQUISITOS FUNCIONAIS (RF)}
 
-Os Requisitos Funcionais (RFs) definem as ações essenciais que o aplicativo deve realizar:
+Os Requisitos Funcionais (RFs) definem claramente as funcionalidades que o aplicativo deve fornecer para atender às necessidades dos usuários envolvidos (Doadores, Beneficiários e ONGs):
 
 \begin{itemize}
-    \item \textbf{RF01 - Gestão de Perfis:} Cadastro e login seguro de doadores (físicos/jurídicos), beneficiários e ONGs.
-    \item \textbf{RF02 - Publicação e Geolocalização:} Publicação de itens e campanhas em um \textit{feed} interativo, exibidos com base na proximidade (Chapecó-SC).
-    \item \textbf{RF03 - Interação e Comunicação:} Facilitar a comunicação segura entre doadores e beneficiários para combinar a entrega.
-    \item \textbf{RF04 - Validação e Histórico:} Possibilitar a confirmação mútua da entrega e registrar o histórico detalhado das doações.
-    \item \textbf{RF05 - Gamificação e Incentivos:} Implementar o sistema de pontuação (gamificação) por ação validada e gerar a base de dados para futuras integrações de benefícios fiscais/sociais.
+    \item \textbf{RF01 — Gerenciamento de Perfis e Autenticação:} O sistema deve permitir o cadastro, login e atualização de dados dos usuários, incluindo nome, e-mail, localização, tipo de perfil e pontuação.
+
+    \item \textbf{RF02 — Publicação de Itens e Campanhas:} O sistema deve permitir que Doadores e ONGs publiquem itens de doação (com categoria) ou campanhas (com meta e valor arrecadado), contendo título, descrição, data e status (Disponível / Solicitado / Entregue).
+
+    \item \textbf{RF03 — Solicitação e Interação da Doação:} O sistema deve permitir que Beneficiários visualizem publicações próximas via geolocalização, solicitem itens/campanhas e interajam por chat para combinar a entrega.
+
+    \item \textbf{RF04 — Validação Mútua da Entrega:} Após a entrega, o Doador deve confirmar a entrega e o Beneficiário deve confirmar o recebimento; o sistema deve registrar a transação como VALIDADA quando ambas as confirmações ocorrerem.
+
+    \item \textbf{RF05 — Sistema de Pontuação (Gamificação):} Quando uma transação for validada, o sistema deve calcular e atribuir pontos aos perfis envolvidos, atualizar a pontuação e registrar o histórico.
+
+    \item \textbf{RF06 — Registro Completo de Transações:} O sistema deve registrar datas de solicitação, entrega, status e vínculo entre doador e beneficiário.
+
+    \item \textbf{RF07 — Sistema de Geolocalização:} O sistema deve registrar a localização do usuário e exibir publicações no feed de acordo com a proximidade.
+
+    \item \textbf{RF08 — Feed de Publicações:} O sistema deve apresentar um feed filtrável por proximidade, categoria (itens) e tipo (item ou campanha).
+
+    \item \textbf{RF09 — Histórico de Doações:} O sistema deve exibir o histórico de transações realizadas por cada perfil, contendo registros das validações.
+
+    \item \textbf{RF10 — Integração com Parceiros Externos (Objetivo Futuro):} O sistema deve possibilitar a geração de uma base exportável para parceiros externos, como órgãos de assistência social.
 \end{itemize}
+
+\item % \textbf{riscos}:
+\end{itemize}
+\vspace{2cm}
 
 \section{REQUISITOS NÃO FUNCIONAIS (RNF)}
 
-Os Requisitos Não Funcionais (RNFs) definem a qualidade e as restrições técnicas do sistema:
+Os Requisitos Não Funcionais (RNFs) descrevem critérios de qualidade, segurança, desempenho e tecnologia necessários para garantir a eficiência do sistema:
 
 \begin{itemize}
-    \item \textbf{RNF01 - Usabilidade e Acessibilidade:} Interface intuitiva, simples e acessível a todos os públicos.
-    \item \textbf{RNF02 - Desempenho e Escalabilidade:} Tempo de resposta rápido e capacidade de suportar um grande volume de usuários e transações.
-    \item \textbf{RNF03 - Segurança e Transparência:} Proteção dos dados pessoais e garantia da confiabilidade dos perfis e das transações.
-    \item \textbf{RNF04 - Compatibilidade:} Solução \textbf{multiplataforma} (Android e iOS).
+    \item \textbf{RNF01 — Multiplataforma:} O aplicativo deve funcionar em dispositivos Android e iOS.
+
+    \item \textbf{RNF02 — Integração via API REST:} Toda comunicação entre o aplicativo e o backend deve ocorrer via API REST padronizada. 
+
+    \item \textbf{RNF03 — Segurança e Autenticação:} O sistema deve garantir proteção de dados pessoais, autenticação segura e evitar alterações não autorizadas de perfis e transações.
+
+    \item \textbf{RNF04 — Disponibilidade e Confiabilidade:} O sistema deve permanecer disponível de forma contínua, garantindo consistência e registro correto das transações.
+
+    \item \textbf{RNF05 — Desempenho:} Operações essenciais como login, publicação, solicitação e validação devem responder em até 2 segundos, em média.
+
+    \item \textbf{RNF06 — Usabilidade:} A interface deve ser intuitiva, facilitando publicações, solicitações, validações e visualização de pontos por usuários leigos. 
+
+    \item \textbf{RNF07 — Geolocalização Precisa:} O sistema deve utilizar serviços de localização confiáveis, atualizando a posição do usuário em tempo real.
+
+    \item \textbf{RNF08 — Persistência de Dados:} Todas as informações devem ser armazenadas em banco de dados SQL ou NoSQL conforme a necessidade dos serviços. 
+\end{itemize}
+\vspace{0.2cm}
+
+\section{DIAGRAMAS}
+
+Os diagramas são fundamentais na modelagem de sistemas, pois permitem visualizar de forma clara estruturas, fluxos e interações que seriam difíceis de compreender apenas por texto. Eles facilitam a comunicação entre os envolvidos, reduzem ambiguidades, ajudam na validação dos requisitos e permitem identificar problemas antes da implementação. Assim, tornam o desenvolvimento mais organizado, preciso e eficiente, contribuindo para a qualidade do sistema.
+\item % \textbf{riscos}:
+\end{itemize}
+Sobre os diagramas, iremos apresentar os seguintes diagramas da nossa aplicação a baixo: 
+
+\begin{itemize}
+    \item \textbf{Diagrama de Casos de Uso}
+    \item \textbf{Diagrama de Classes}
+    \item \textbf{Diagramas de Sequência}
+    \item \textbf{Diagrama de Atividades}
+    \item \textbf{Diagrama de Componentes}
 \end{itemize}
 
-\postextual%% Elementos pós-textuais
-\newpage
-\printbibliography%% Referências
+%% DIAGRAMA DE CASO DE USO
+\subsubsection{Diagrama de Caso de Uso}
 
-%% Fim do documento
+O diagrama apresenta os principais atores do sistema — doador, beneficiário, ONG e parceiro, e mostra as funcionalidades que cada um pode executar, como publicar itens, solicitar apoio, interagir via chat, buscar por geolocalização, validar entregas e visualizar dados de impacto. Também evidencia relações entre casos de uso, como extensões e inclusões, indicando quando uma funcionalidade depende ou complementa outra. No geral, o diagrama organiza de forma clara como cada ator interage com o sistema e quais ações estão disponíveis para cada perfil.
+
+\begin{center}
+    \includegraphics[width=0.85\textwidth]{Projeto-App-Doacoes/images/casodeuso.jpeg}\\
+    \vspace{0.2cm}
+    \textbf{Figura 1 — Diagrama de Caso de Uso do Sistema}
+\end{center}
+\vspace{1cm}
+%% DIAGRAMA DE CLASSES
+\subsubsection{Diagrama de Classes}
+
+ O diagrama de classes apresenta a estrutura estática do sistema, mostrando as principais entidades, seus atributos, métodos e como elas se relacionam. As classes derivadas de Usuário — como Doador, Beneficiário e ONG — aparecem especializadas com funcionalidades próprias, enquanto elementos centrais como ItemDoacao, Campanha e Transacao mostram o fluxo de publicação, contribuição e registro das operações. O diagrama também evidencia associações importantes, multiplicidades e classes auxiliares, como Chat e HistoricoImpacto, organizando de forma clara como os componentes do sistema se conectam e sustentam as funcionalidades previstas.
+\begin{center}
+    \includegraphics[width=0.95\textwidth]{Projeto-App-Doacoes/images/diagramadeclasses.jpeg}\\
+    \vspace{0.2cm}
+    \textbf{Figura 2 — Diagrama de Classes do Sistema}
+\end{center}
+%% DIAGRAMA DE SEQUENCIA
+\subsubsection{Diagrama de Sequencia}
+
+O diagrama de sequência descreve a ordem das interações entre o Doador, o Beneficiário, o aplicativo, a API e o módulo de histórico durante a confirmação da transação. Ele mostra como as mensagens são trocadas ao longo do processo, incluindo a solicitação de confirmação, as validações feitas, a atualização do status da doação e o registro do evento, evidenciando o fluxo temporal da operação.
+\begin{center}
+    \includegraphics[width=0.74\textwidth]{Projeto-App-Doacoes/images/diagramadesequencia.jpeg}\\
+    \vspace{0.2cm}
+    \textbf{Figura 3 — Diagrama de sequência}
+\end{center}
+%% DIAGRAMA DE ATIVIDADES
+\subsubsection{Diagrama de Atividades}
+
+O diagrama mostra o fluxo de confirmação de uma entrega: doador e recebedor acessam a transação e confirmações, enquanto o sistema atualiza o status para indicar quem já confirmou. Em seguida, o sistema verifica se ambos concluíram o processo. Se sim, a transação é validada, os pontos são calculados e adicionados, e um registro é criado no histórico. Se não, o processo permanece pendente.
+\begin{center}
+    \includegraphics[width=0.63\textwidth]{Projeto-App-Doacoes/images/diagramadeatividade.jpeg}\\
+    \vspace{0.2cm}
+    \textbf{Figura 4 — Diagrama de Atividades}
+\end{center}
+%% DIAGRAMA DE COMPONENTES
+\subsubsection{Diagrama de Componentes}
+
+O diagrama mostra o funcionamento interno do app: o usuário acessa o app, que envia requisições para a API. A API repassa ações para módulos de usuários, doações, transações, chat e gamificação, enquanto tudo é salvo no banco de dados. Um serviço de mapas fornece geolocalização para filtrar itens por proximidade. Assim, o sistema integra cadastro, publicações, comunicação e registro de doações.
+\begin{center}
+    \includegraphics[width=0.85\textwidth]{Projeto-App-Doacoes/images/diagramadecomponentes.jpeg}\\
+    \vspace{0.2cm}
+    \textbf{Figura 5 — Diagrama de Componentes}
+\end{center}
+
+
+\postextual
+\newpage
+\printbibliography
+
 \end{document}

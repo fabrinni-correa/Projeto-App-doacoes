@@ -26,5 +26,9 @@ Para validar a ideia com o público geral, criamos e divulgamos um formulário o
 * **Formulário:** O modelo do formulário utilizado está anexado nesta pasta para referência.
 * **Resultados:** As respostas e dados coletadas estão anexado.
 
+## 3. Print de sites e plataformas de aplicações relacionadas
+
+Aqui tem os prints dos trabalhos relacionados
+
 ---
 
